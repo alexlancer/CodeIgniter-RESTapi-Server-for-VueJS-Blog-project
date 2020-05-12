@@ -1,6 +1,6 @@
-# # CodeIgniter 4 RESTapi Server
+# # CodeIgniter 4 RESTapi Server for VueJS Blog repository
 
-CodeIgniter 4 RESTapi Server based on YouTube tutorial
+Based on YouTube tutorial
 
 > https://www.youtube.com/watch?v=qPefoRbsfMc&list=PLYogo31AXFBN23O7wHgQv7eI7Qf84nj4W
 
