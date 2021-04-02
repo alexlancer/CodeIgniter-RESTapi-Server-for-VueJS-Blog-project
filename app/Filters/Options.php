@@ -11,7 +11,7 @@ use CodeIgniter\Filters\FilterInterface;
 
 class Options implements FilterInterface
 {
-  public function before(RequestInterface $request)
+  public function before(RequestInterface $request, $arguments = null)
   {
     header('Access-Control-Allow-Origin: http://localhost:8080');
     header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization");
@@ -24,7 +24,7 @@ class Options implements FilterInterface
 
   //--------------------------------------------------------------------
 
-  public function after(RequestInterface $request, ResponseInterface $response)
+  public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
   {
     // Do something here
   }
