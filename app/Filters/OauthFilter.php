@@ -11,7 +11,7 @@ use \OAuth2\Response;
 
 class OauthFilter implements FilterInterface
 {
-    public function before(RequestInterface $request)
+    public function before(RequestInterface $request, $arguments = null)
     {
        $oauth = new Oauth();
        $request = Request::createFromGlobals();
@@ -25,7 +25,7 @@ class OauthFilter implements FilterInterface
 
     //--------------------------------------------------------------------
 
-    public function after(RequestInterface $request, ResponseInterface $response)
+    public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
         // Do something here
     }
